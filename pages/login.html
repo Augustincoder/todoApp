@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=done_all" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgyellow: 'rgb(255, 212, 59)',
+                        bgblack: 'rgb(17, 17, 17)',
+                        textblack: '#212529ff',
+                        oq: '#f4f4f4ff',
+                        textgrey: '#444444ff',
+                        taskpink: 'rgb(255, 107, 107)',
+                        taskblue: 'rgb(102, 217, 232)',
+                        navgrey: '#444444ff',
+                        navbg: 'rgb(244, 244, 244)',
+                        bgselected: 'rgb(235, 235, 235)',
+                        bgwhite: 'rgba(250, 250, 250, 0)',
+                        textblack: '#212529ff',
+                        btnblack: 'rgb(33, 37, 41)',
+                        btnhover: 'rgb(238 188 9)',
+                    },
+                    fontFamily: {
+                        deca: ['Lexend Deca', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        mainpic: "url('/images/main.png')",
+                        secondpic: "url('/images/second.png')"
+                    }
+                }
+            }
+        }
+    </script>
     <title>Document</title>
 </head>
-<body>
-    <h1>login</h1>
+
+<body class="font-deca bg-bgwhite">
+    <main class="h-screen w-screen flex">
+        <!-- left -->
+        <div class="flex flex-col bg-bgblack w-1/2 mr-3 m-6 rounded-2xl p-6">
+
+            <p class="text-oq tracking-tight leading-10 text-4xl font-bold mb-4">
+                Organic Mind
+            </p>
+
+            <div class="flex-grow flex justify-center items-center overflow-hidden">
+                <img class="object-cover h-[494px] w-[364px] max-h-full" src="/images/" alt="Main Image" />
+            </div>
+        </div>
+
+
+
+
+        <!-- right -->
+        <div
+            class="w-1/2 border border-bgselected ml-3 m-6 flex items-center justify-center rounded-2xl  bg-bgwhite text-textblack">
+            <div class="text-gray-800 text-left px-24 w-full space-y-4">
+
+                <h2 class="text-5xl  font-semibold config  mb-4">Sign In</h2>
+
+                <form action="" class="space-y-4">
+                    <input class="block w-full py-3 px-3  rounded-lg border focus:outline-none   focus:border-[#646363]  transition" type="email" placeholder="email@mail.com" >
+                    <input class="block w-full py-3 px-3  rounded-lg border focus:outline-none border-bgselected" type="password" name="" id="" placeholder="********">
+                </form>
+
+                <a href="/pages/register.html"
+                    class="block w-full text-center text-base leading-6 bg-bgyellow  text-btnblack font-semibold py-3 rounded-lg hover:bg-btnhover transition-colors">
+                   Sign In
+                </a>
+
+
+                <p class="text-center font-semibold text-base leading-6">
+                    Already have an account?
+                    <a href="#" class=" hover:underline">Sign In</a>
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+
 </body>
+
 </html>

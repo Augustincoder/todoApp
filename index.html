@@ -24,9 +24,11 @@
                         taskblue: 'rgb(102, 217, 232)',
                         navgrey: '#444444ff',
                         navbg: 'rgb(244, 244, 244)',
-                        bgyellow:'rgb(255, 212, 59)',
                         bgselected: 'rgb(235, 235, 235)',
-                        bgwhite: 'rgba(250, 250, 250, 0)'
+                        bgwhite: 'rgba(250, 250, 250, 0)',
+                        textblack: '#212529ff',
+                        btnblack:'rgb(33, 37, 41)',
+                        btnhover:'rgb(238 188 9)',
                     },
                     fontFamily: {
                         deca: ['Lexend Deca', 'sans-serif']
@@ -45,14 +47,14 @@
 <body class="font-deca bg-bgwhite">
     <main class="h-screen w-screen flex">
         <!-- left -->
-        <div class="flex flex-col bg-bgblack w-1/2 mr-3 m-6 rounded-xl p-6 shadow-md">
+        <div class="flex flex-col bg-bgblack w-1/2 mr-3 m-6 rounded-2xl p-6">
 
             <p class="text-oq tracking-tight leading-10 text-4xl font-bold mb-4">
                 Organic Mind
             </p>
 
             <div class="flex-grow flex justify-center items-center overflow-hidden">
-                <img class="object-cover h-[494px] w-[364px] max-h-full" src="/images/main.png" alt="Main Image" />
+                <img class="object-cover h-[494px] w-[364px] max-h-full" src="images/main.png" alt="Main Image" />
             </div>
         </div>
 
@@ -60,19 +62,32 @@
 
 
         <!-- right -->
-        <div class="w-1/2  border-2 border-bgselected ml-3 m-6 flex items-center justify-center rounded-xl shadow-md bg-bgwhite">
-            <div class="text-gray-800 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Discover Simplicity</h2>
-                <p class="text-base opacity-80 text-left">
-                    <span> With only the features you need, Organic Mind is customized for individuals seeking a
-                        stress-free
-                        way to stay focused on their goals, projects, and tasks.</span>
+        <div
+            class="w-1/2 border border-bgselected ml-3 m-6 flex items-center justify-center rounded-2xl  bg-bgwhite text-textblack">
+            <div class="text-gray-800 text-left px-24 w-full space-y-4">
+
+                <h2 class="text-5xl  font-semibold config  mb-4">Productive mind</h2>
+
+                <p class="text-base leading-6 text-textgrey">
+                    With only the features you need, Organic Mind is customized for individuals seeking a
+                    stress-free way to stay focused on their goals, projects, and tasks.
                 </p>
-                <div class="bg-bgyellow">
-                    <a href="/pages/register.html">Get Started</a>
-                </div>
+
+     
+                <a href="/pages/register.html"
+                    class="block w-full text-center text-base leading-6 bg-bgyellow  text-btnblack font-semibold py-3 rounded-lg hover:bg-btnhover transition-colors">
+                    Get Started
+                </a>
+
+          
+                <p class="text-center font-semibold text-base leading-6">
+                    Already have an account?
+                    <a href="/pages/register.html" class="font-medium hover:underline">Sign In</a>
+                </p>
+
             </div>
         </div>
+
     </main>
 
 </body>
