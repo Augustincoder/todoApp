@@ -27,8 +27,8 @@
                         bgselected: 'rgb(235, 235, 235)',
                         bgwhite: 'rgba(250, 250, 250, 0)',
                         textblack: '#212529ff',
-                        btnblack:'rgb(33, 37, 41)',
-                        btnhover:'rgb(238 188 9)',
+                        btnblack: 'rgb(33, 37, 41)',
+                        btnhover: 'rgb(238 188 9)',
                     },
                     fontFamily: {
                         deca: ['Lexend Deca', 'sans-serif']
@@ -54,7 +54,7 @@
             </p>
 
             <div class="flex-grow flex justify-center items-center overflow-hidden">
-                <img class="object-cover h-[494px] w-[364px] max-h-full" src="images/main.png" alt="Main Image" />
+                <img class="object-cover h-[494px] w-auto max-h-full" src="/images/main.png" alt="Main Image" />
             </div>
         </div>
 
@@ -64,25 +64,34 @@
         <!-- right -->
         <div
             class="w-1/2 border border-bgselected ml-3 m-6 flex items-center justify-center rounded-2xl  bg-bgwhite text-textblack">
-            <div class="text-gray-800 text-left px-24 w-full space-y-4">
+            <div class="text-gray-800 text-left px-32 w-full space-y-5">
 
-                <h2 class="text-5xl  font-semibold config  mb-4">Productive mind</h2>
+                <h2 class="text-5xl  font-semibold config  mb-6">Sign
+                    Up</h2>
 
-                <p class="text-base leading-6 text-textgrey">
-                    With only the features you need, Organic Mind is customized for individuals seeking a
-                    stress-free way to stay focused on their goals, projects, and tasks.
-                </p>
+                <form action class="gap-y-4 gap-x-3 grid grid-cols-2">
+                    <input
+                        class="block w-full py-3 px-3  rounded-lg border focus:outline-none   focus:border-[#646363]  transition"
+                        type="text" placeholder="Your first name ">
+                    <input
+                        class="block w-full py-3 px-3  rounded-lg border focus:outline-none   focus:border-[#646363]  transition"
+                        type="text" placeholder="Your last name ">
+                    <input
+                        class=" col-span-2 block w-full py-3 px-3  rounded-lg border focus:outline-none   focus:border-[#646363]  transition"
+                        type="email" placeholder="email@mail.com">
+                    <input
+                        class="col-span-2 block w-full py-3 px-3  rounded-lg border focus:outline-none focus:border-[#646363]  transition"
+                        type="password" name id placeholder="********">
+                </form>
 
-     
                 <a href="/pages/register.html"
                     class="block w-full text-center text-base leading-6 bg-bgyellow  text-btnblack font-semibold py-3 rounded-lg hover:bg-btnhover transition-colors">
-                    Get Started
+                    Sign Up
                 </a>
 
-          
                 <p class="text-center font-semibold text-base leading-6">
                     Already have an account?
-                    <a href="/pages/register.html" class="font-medium hover:underline">Sign In</a>
+                    <a href="/pages/register.html" class=" hover:underline">Sign In</a>
                 </p>
 
             </div>
